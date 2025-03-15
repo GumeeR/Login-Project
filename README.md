@@ -4,7 +4,7 @@
 Este proyecto es un **Sistema de Login** desarrollado con **Laravel**, que permite a los usuarios iniciar sesión y acceder a un dashboard protegido.
 
 ## 🚀 Características
-- **Interfaz Atractiva**: Diseño moderno y responsivo para una mejor experiencia de usuario. 🎨
+- **Interfaz Atractiva**: Diseño minimalista y responsivo para una mejor experiencia de usuario. 🎨
 - **Validación de Formulario**: Asegura que los datos ingresados sean correctos antes de enviarlos. ✅
 - **Manejo de Sesiones**: Utiliza `localStorage` para mantener la sesión activa del usuario. 🔒
 - **Mensajes de Error**: Proporciona retroalimentación clara en caso de errores durante el inicio de sesión. ⚠️

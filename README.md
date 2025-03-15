@@ -32,3 +32,104 @@ Este proyecto es un **Sistema de Login** desarrollado con **Laravel**, que permi
 
 - **Base de Datos**:
   - MySQL: Sistema de gestión de bases de datos para almacenar información de usuarios
+
+## 📦 Estructura del proyecto
+
+```
+proyecto-login/
+├── app/
+│   └── Http/
+│       └── Controllers/
+│           └── AuthController.php
+├── public/
+│   ├── css/
+│   │   └── login.css
+│   ├── js/
+│   │   ├── login.js
+│   │   └── dashboard.js
+│   └── images/
+│       └── logo.png
+├── resources/
+│   └── views/
+│       ├── login.blade.php
+│       └── dashboard.blade.php
+└── routes/
+    └── web.php
+```
+## 🔧 Instalación
+
+1. Clona este repositorio:
+```bash
+git clone https://github.com/GumeeR/Login-Project.git
+```
+
+2. Instala las dependencias:
+```bash
+composer install
+npm install
+```
+3. Copia el archivo de entorno y configura las variables:
+```bash
+cp .env.example .env
+# Edita las variables de base de datos en el archivo .env
+```
+4. Genera la clave de la aplicación:
+```bash
+php artisan key:generate
+```
+5. Ejecuta las migraciones:
+```bash
+php artisan migrate
+```
+6. Crea un usuario de prueba (opcional):
+```bash
+php artisan tinker
+# Dentro de tinker:
+User::create(['name' => 'Usuario Prueba', 'email' => 'usuario@ejemplo.com', 'password' => bcrypt('123456')]);
+exit
+```
+7. Finalmente Inicia el servidor!:
+```bash
+php artisan serve
+```
+## 💻 Uso
+
+1. Accede a `http://localhost:8000` en tu navegador
+2. Utiliza las siguientes credenciales para probar:
+   - Email: `usuario@ejemplo.com`
+   - Contraseña: `123456`
+3. Explora las funcionalidades de validación, persistencia y cierre de sesión
+
+## 🧪 Pruebas
+
+Para verificar el funcionamiento del sistema:
+
+1. **Prueba de validación de campos**:
+   - Intenta enviar el formulario vacío
+   - Ingresa un email inválido
+   - Ingresa una contraseña demasiado corta
+
+2. **Prueba de persistencia**:
+   - Inicia sesión correctamente
+   - Cierra el navegador y vuelve a abrir la aplicación
+   - Deberías ser redirigido automáticamente al dashboard
+
+3. **Prueba de cierre de sesión**:
+   - Haz clic en "Cerrar Sesión" desde el dashboard
+   - Verifica que vuelvas a la pantalla de login
+   - Intenta acceder al dashboard directamente, no deberías poder
+     
+## 📱 Responsividad
+
+El diseño se adapta a diferentes tamaños de pantalla:
+- Escritorio: diseño completo
+- Tablets: ajustes menores de tamaño
+- Móviles: reorganización para mejor visualización en pantallas pequeñas
+
+## 🤝 Contribuir
+
+1. Haz un fork del repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/feature`)
+3. Haz commit de tus cambios (`git commit -m 'Add feature'`)
+4. Push a la rama (`git push origin feature/feature`)
+5. Abre un Pull Request

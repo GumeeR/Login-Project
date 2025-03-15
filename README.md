@@ -13,7 +13,7 @@ Este proyecto es un **Sistema de Login** desarrollado con **Laravel**, que permi
 ## 🛠️ Tecnologías Utilizadas
 - **PHP**: Estructura del contenido.
 - **CSS**: Estilos y diseño responsivo.
-- **JavaScript**: Lógica del cliente y manejo de eventos.
+- **JavaScript**: Document Object Model y manejo de eventos.
 - **AJAX**: Comunicación asíncrona con el servidor.
 - **Laravel**: Framework backend para manejar la autenticación y las rutas.
 - **MySQL**: Sistema de gestión de bases de datos utilizado para almacenar la información de los usuarios.
